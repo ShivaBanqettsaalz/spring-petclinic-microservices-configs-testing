@@ -19,7 +19,7 @@ spring:
     activate:
       on-profile: docker
   zipkin:
-    baseUrl: http://65.1.3.90:9411
+    baseUrl: http://${TRACING_SERVER}:9411
 server:
   port: 8083
 eureka:
